@@ -619,9 +619,11 @@ body {
   position: absolute;
   top: 0%;
   left: 0%;
+  opacity: 0;
   transform: translateY(100%);
   transition: transform var(--transition-duration)
-    var(--transition-timing-function);
+      var(--transition-timing-function),
+    opacity var(--transition-duration) var(--transition-timing-function);
 
   background-color: rgba(33, 150, 243, 0.9);
 
@@ -639,6 +641,7 @@ body {
 .projects-link:hover .projects-description,
 .projects-link:focus .projects-description {
   transform: translateY(0);
+  opacity: 1;
 }
 
 .projects-link:hover,
