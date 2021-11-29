@@ -608,6 +608,8 @@ body {
 
 .projects-link {
   display: block;
+  transition: box-shadow var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .projects-description-box {
